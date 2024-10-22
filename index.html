@@ -1,13 +1,79 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Charset Declaration -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <!-- Icons for various devices and sizes -->
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="icon" type="image/png" href="/logo.svg" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/logo.svg" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/logo.svg" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" /> <!-- Fallback for older browsers -->
+
+    <!-- Viewport setup for responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+
+    <!-- Title and meta description for SEO -->
+    <title>TL Technologies - Innovative Technology Solutions Coming Soon</title>
+    <meta name="description" content="TL Technologies is your partner for cutting-edge technology solutions, including digital marketing, website development, branding, and IT consulting. Our new website is launching soon!" />
+    <meta name="keywords" content="TL Technologies, technology solutions, digital marketing, website development, IT consulting, branding, innovation, cutting-edge technology, coming soon" />
+    <link rel="canonical" href="https://www.tltechnologies.net" />
+
+    <!-- Revisit-after Meta Tag -->
+    <meta name="revisit-after" content="1 days" />
+
+    <!-- Robots Meta Tag -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Author Meta Tag -->
+    <meta name="author" content="TL Technologies" />
+
+    <!-- Open Graph meta tags for social media sharing (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="TL Technologies - Innovative Technology Solutions Coming Soon" />
+    <meta property="og:description" content="Stay tuned! TL Technologies is launching its new website with cutting-edge solutions in digital marketing, branding, and IT services. Exciting innovations ahead." />
+    <meta property="og:image" content="https://www.tltechnologies.net/src/assets/logo.svg" />
+    <meta property="og:url" content="https://www.tltechnologies.net/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter meta tags for optimized sharing -->
+    <meta name="twitter:title" content="TL Technologies - Innovative Solutions Coming Soon" />
+    <meta name="twitter:description" content="Explore the future of digital marketing, IT consulting, and more with TL Technologies. New website launching soon!" />
+    <meta name="twitter:image" content="https://www.tltechnologies.net/src/assets/logo.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Preload important assets to boost performance -->
+    <link rel="preload" href="/src/main.jsx" as="script" />
+    <link rel="preload" href="/src/assets/logo.svg" as="image" />
+
+    <!-- Structured Data (JSON-LD for SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TL Technologies",
+      "url": "https://www.tltechnologies.net",
+      "logo": "https://www.tltechnologies.net/src/assets/logo.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 9061432814",
+        "contactType": "Customer Service"
+      },
+      "sameAs": [
+        "https://www.facebook.com/tltechnologies",
+        "https://www.linkedin.com/company/tltechnologies"
+      ]
+    }
+    </script>
+
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- Main JavaScript file for the application -->
+    <script type="module" src="/src/main.jsx" defer></script>
   </body>
 </html>
